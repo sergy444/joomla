@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 1.6//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.6/template-install.dtd">
+<extension
+	version="2.5"
+	type="template"
+	client="site">
+  <name>alpine</name>
+  <creationDate>5 Feb 2014</creationDate>
+  <author>mojoomla</author>
+  <authorEmail>sales@mojoomla.com</authorEmail>
+  <authorUrl>http://www.mojoomla.com</authorUrl>
+  <copyright>Copyright (C) 2005 - 2014 Open Source Matters, Inc. All rights reserved.</copyright>
+  <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+  <version>2.5.0</version>
+  <description>
+    <![CDATA[<link href="../templates/alpine/css/admin.css" rel="stylesheet" type="text/css" media="all" /> 
+      <div class="templateinfo"><h3><strong>Alpine Description</strong></h3>
+      <img src="../templates/alpine/images/template.png" border="0" title="" alt=""/>
+      <p>Template Links</p>
+      <p>Template Setup Guide <a href="#" target="_blank">Read Now</a><br />  
+      For Tutorials Click Here <a href="#" target="_blank">Joomla Tutorials</a><br />
+      Follow us on Facebook <a href="#" target="_blank">Alpine Facebook</a>
+      <br /></p></div> ]]>
+  </description>
+  <languages folder="language">
+    <language tag="ar-AA">ar-AA/ar-AA.tpl_alpine.ini</language>
+    <language tag="de-DE">de-DE/de-DE.tpl_alpine.ini</language>
+    <language tag="en-GB">en-GB/en-GB.tpl_alpine.ini</language>
+    <language tag="es-ES">es-ES/es-ES.tpl_alpine.ini</language>
+    <language tag="fr-FR">fr-FR/fr-FR.tpl_alpine.ini</language>
+    <language tag="gr-GR">gr-GR/gr-GR.tpl_alpine.ini</language>
+    <language tag="it-IT">it-IT/it-IT.tpl_alpine.ini</language>
+    <language tag="ja-JP">ja-JP/ja-JP.tpl_alpine.ini</language>
+    <language tag="nb-NO">nb-NO/nb-NO.tpl_alpine.ini</language>
+    <language tag="nl-NL">nl-NL/nl-NL.tpl_alpine.ini</language>
+    <language tag="pt-PT">pt-PT/pt-PT.tpl_alpine.ini</language>
+    <language tag="ru-RU">ru-RU/ru-RU.tpl_alpine.ini</language>
+    <language tag="sv-SE">sv-SE/sv-SE.tpl_alpine.ini</language>
+    <language tag="zh-CN">zh-CN/zh-CN.tpl_alpine.ini</language>
+  </languages>
+  <files>
+    <folder>css</folder>
+    <folder>fonts</folder>
+    <folder>googlefont</folder>
+    <folder>html</folder>
+    <folder>images</folder>
+    <folder>img</folder>
+    <folder>js</folder>
+    <folder>language</folder>
+    <folder>php</folder>
+    <filename>index.php</filename>
+    <filename>templateDetails.xml</filename>
+    <filename>template_preview.png</filename>
+    <filename>template_thumbnail.png</filename>
+  </files>
+  <positions>
+    <position>mj-right</position>
+    <position>mj-slider</position>
+    <position>mj-video</position>
+    <position>mj-pattern</position>
+    <position>mj-menu</position>
+    <position>mj-topbar</position>
+    <position>mj-share</position>
+    <position>mj-breadcrumbs</position>
+    <position>mj-position3_1</position>
+    <position>mj-position3_2</position>
+    <position>mj-position4</position>
+    <position>mj-position5</position>
+    <position>mj-position7</position>
+    <position>mj-aboutus</position>
+    <position>mj-aboutus_parallax</position>
+    <position>mj-services</position>
+    <position>mj-services_parallax</position>
+    <position>mj-portfolio</position>
+	<position>mj-spportfolio</position>
+    <position>mj-portfolio_parallax</position>
+    <position>mj-team</position>
+    <position>mj-team_parallax</position>
+    <position>mj-client</position>
+    <position>mj-client_parallax</position>
+    <position>mj-pricing</position>
+    <position>mj-pricing_parallax</position>
+    <position>mj-blog</position>
+    <position>mj-blog_parallax</position>
+    <position>mj-map</position>
+    <position>mj-contactus</position>
+    <position>mj-contactform</position>
+    <position>mj-contactus_copyright</position>
+  </positions>
+  <config>
+    <fields name="params" addfieldpath="/templates/alpine/googlefont">
+      <fieldset name="LOGO_DETAIL">
+      <field label="LOGO_IMAGE_INFO"  type="spacer" class="alert alert-blue"/>
+      <field name="logoFile" class="" type="media" default=""
+					label="LOGO"
+					description="Add Logo" />
+      </fieldset>
+      <fieldset name="COLOROPTIONS">
+      <field name="themecolor" type="list" default="blu" label="Background" description="Select Background Color" >
+        <option value="blu">Blue</option>
+        <option value="green">Green</option>
+        <option value="light-violet">light-violet</option>
+        <option value="orange">Orange</option>
+        <option value="red">Red</option>
+        <option value="violet">violet</option>
+      </field>
+      </fieldset>
+      <fieldset name="FONTOPTIONS">
+      <field label="FONT_INFO"  type="spacer" class="alert alert-blue"/>
+      <field name="body_fontsize" type="list" default="12px" label="BODY FONT SIZE" description="Choose bodyfont size">
+        <option value="12px">Small</option>
+        <option value="14px">Medium</option>
+        <option value="16px">Large</option>
+      </field>
+      <field name="body_fontstyle" type="GoogleFonts" default="Arial, Helvetica, sans-serif" label="BODY FONT STYLE" description="Select Body font">
+        <option value="font">font</option>
+      </field>
+      </fieldset>
+      <fieldset name="FIVEPARALLAX">
+      <field name="p5title1" type="text" label="P5TITLE1" description="Title1" default="From mobile platforms with the most innovative marketing strategies, our goal is always concrete and tangible:" size="50" />
+      <field name="p5title2" type="text" label="P5TITLE2" description="Title2" default="Please the customer" size="50" />
+      <field type="spacer" name="@spacer00" hr="true"/>
+      <field name="p5img1" type="media" size="30" default="images/client1.png" label="P5IMG1" 
+										description="Select Image" />
+      <field name="p5link1" type="text" size="50" default="#" label="P5LINK1" description="Enter the link" filter="raw" />
+      <field type="spacer" name="@spacer01" hr="true"/>
+      <field name="p5img2" type="media" size="30" default="images/client2.png" label="P5IMG2" 
+										description="Select Image" />
+      <field name="p5link2" type="text" size="50" default="#" label="P5LINK2" description="Enter the link" filter="raw" />
+      <field type="spacer" name="@spacer02" hr="true"/>
+      <field name="p5img3" type="media" size="30" default="images/client3.png" label="P5IMG3" 
+										description="Select Image" />
+      <field name="p5link3" type="text" size="50" default="#" label="P5LINK3" description="Enter the link" filter="raw" />
+      <field type="spacer" name="@spacer03" hr="true"/>
+      <field name="p5img4" type="media" size="30" default="images/client4.png" label="P5IMG4" 
+										description="Select Image" />
+      <field name="p5link4" type="text" size="50" default="#" label="P5LINK4" description="Enter the link" filter="raw" />
+      <field type="spacer" name="@spacer04" hr="true"/>
+      <field name="p5img5" type="media" size="30" default="images/client5.png" label="P5IMG5" 
+										description="Select Image" />
+      <field name="p5link5" type="text" size="50" default="#" label="P5LINK5" description="Enter the link" filter="raw" />
+      <field type="spacer" name="@spacer05" hr="true"/>
+      <field name="p5img6" type="media" size="30" default="images/client6.png" label="P5IMG6" 
+										description="Select Image" />
+      <field name="p5link6" type="text" size="50" default="#" label="P5LINK6" description="Enter the link" filter="raw" />
+      <field type="spacer" name="@spacer06" hr="true"/>
+      <field name="p5bg" type="media" size="30" default="../images/separator4.jpg" label="P5BG" 
+										description="Select Image" />
+      </fieldset>
+      <fieldset name="COPYRIGHT">
+      <field label="COPYRIGHT_INFO"  type="spacer" class="alert alert-blue"/>
+      <field name="copyright" type="text" size="50" filter="raw" default="© Copyright 2014 by Mojoomla. All Rights Reserved. Powered by mojoomla.com" label="COPYRIGHT TEXT" description="Copyright Text" />
+      </fieldset>
+      <fieldset name="SOCIAL">
+      <field label="SOCIAL_INFO"  type="spacer" class="alert alert-blue"/>
+      <field name="social" type="radio" label="SHOW SOCIAL MENU" description="Select if you want menu on/off" default="1" checked="checked" class="btn-group alert">
+        <option value="0">JNO</option>
+        <option value="1">JYES</option>
+      </field>
+      <field name="nav_facebook_sw" type="radio" label="FACEBOOK" description="Facebook" default="1" checked="checked" class="btn-group">
+        <option value="0">JNO</option>
+        <option value="1">JYES</option>
+      </field>
+      <field name="nav_facebook" type="text" size="60" default="" label="FACEBOOK URL" description="Facebook URL" />
+      <field name="nav_twitter_sw" type="radio" label="TWITTER" description="Twitter" default="1" checked="checked" class="btn-group">
+        <option value="0">JNO</option>
+        <option value="1">JYES</option>
+      </field>
+      <field name="nav_twitter" type="text" size="50" default="" label="TWITTER URL" description="Twitter URL" />
+      <field name="nav_google_sw" type="radio" label="GOOGLE" description="Google" default="1" checked="checked" class="btn-group">
+        <option value="0">JNO</option>
+        <option value="1">JYES</option>
+      </field>
+      <field name="nav_google" type="text" size="50" default="" label="GOOGLE URL" description="Google URL" />
+      <field name="nav_youtube_sw" type="radio" label="YOUTUBE" description="Youtube" default="1" checked="checked" class="btn-group">
+        <option value="0">JNO</option>
+        <option value="1">JYES</option>
+      </field>
+      <field name="nav_youtube" type="text" size="50" default="" label="YOUTUBE URL" description="Youtube URL" />
+      </fieldset>
+      <fieldset name="RTLOPTIONS">
+      <field label="RTL_INFO" type="spacer" class="alert alert-blue"/>
+      <field name="rtl_onoff" type="radio" label="SELECT RTL OPTION" description="Select if you want rtl on/off" default="0" checked="checked" class="btn-group">
+        <option value="0">JNO</option>
+        <option value="1">JYES</option>
+      </field>
+      </fieldset>
+    </fields>
+  </config>
+</extension>

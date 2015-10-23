@@ -1,0 +1,6 @@
+/* overwrite the element.style only necessary for the beez standard template, you may remove it */
+.one_half.product-img-box div[style]{
+    overflow-x: hidden !important;
+    overflow-y: hidden !important;
+}
+

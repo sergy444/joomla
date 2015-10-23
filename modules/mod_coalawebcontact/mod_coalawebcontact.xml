@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5" client="site" method="upgrade">
+    <name>MOD_COALAWEBCONTACT</name>
+    <creationDate>2014-01-11</creationDate>
+    <author>Steven Palmer</author>
+    <authorEmail>support@coalaweb.com</authorEmail>
+    <authorUrl>http://coalaweb.com</authorUrl>
+    <copyright>Copyright (c) 2013 Steven Palmer All rights reserved</copyright>
+    <license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+    <version>0.0.2</version>
+    <description>MOD_COALAWEBCONTACT_DESC</description>
+        
+    <languages folder="language">
+        <language tag="en-GB">en-GB/en-GB.mod_coalawebcontact.ini</language>
+        <language tag="en-GB">en-GB/en-GB.mod_coalawebcontact.sys.ini</language>
+    </languages>    
+	
+    <files>
+        <filename module="mod_coalawebcontact">mod_coalawebcontact.php</filename>
+        <filename>index.html</filename>
+        <filename>helper.php</filename>
+        <folder>tmpl</folder>
+        <folder>assets</folder>
+        <folder>language</folder>
+    </files>
+        
+    <!-- HELP FILE -->
+    <help url="MOD_COALAWEBCONTACT_HELP_URL" />
+        
+    <!-- UPDATESERVER DEFINITION -->
+    <updateservers></updateservers>
+
+    <config>
+        <fields 
+            name="params" 
+            addfieldpath="/plugins/system/cwgears/fields">
+            
+            <fieldset 
+                name="GENERAL"               
+                label="MOD_CWCONTACT_GENERAL_OPTIONS" >
+                        
+                <field 
+                    name="css_import" 
+                    type="css"/>
+                
+                <field 
+                    name="basic_info"
+                    type="info"
+                    default=""
+                    label="MOD_CWCONTACT_MSG_OPTIONS"/>
+	
+                <field 
+                    name="recipient" 
+                    type="email" 
+                    default="" 
+                    label="MOD_CWCONTACT_FIELD_RECIPIENT_LABEL" 
+                    description="MOD_CWCONTACT_FIELD_RECIPIENT_DESC" />
+                
+                <field 
+                    name="email_subject" 
+                    type="text" 
+                    default="" 
+                    label="MOD_CWCONTACT_FIELD_PRE_SUBJECT_LABEL" 
+                    description="MOD_CWCONTACT_FIELD_PRE_SUBJECT_DESC" />
+                
+                <field
+                    type="spacer" 
+                    name="fdisplay_spacer" 
+                    label="MOD_CWCONTACT_SPACER_FDISPLAY"
+                    class="cw_label" />  
+                
+                <field 
+                    name="display_name" 
+                    type="list" 
+                    class="btn-group"  
+                    default="" 
+                    label="MOD_CWCONTACT_FIELD_DISPLAY_NAME_LABEL" 
+                    description="MOD_CWCONTACT_FIELD_DISPLAY_NAME_DESC" >
+                    <option value="">MOD_CWCONTACT_FIELD_COM_OPT</option>
+                    <option value="N">CW_NO</option>
+                    <option value="Y">CW_YES</option>
+                    <option value="R">CW_REQ</option>
+                </field>
+                
+                <field 
+                    name="display_subject" 
+                    type="list" 
+                    class="btn-group"  
+                    default="" 
+                    label="MOD_CWCONTACT_FIELD_DISPLAY_SUBJECT_LABEL" 
+                    description="MOD_CWCONTACT_FIELD_DISPLAY_SUBJECT_DESC" >
+                    <option value="">MOD_CWCONTACT_FIELD_COM_OPT</option>
+                    <option value="N">CW_NO</option>
+                    <option value="Y">CW_YES</option>
+                    <option value="R">CW_REQ</option>
+                </field>
+                
+                <field 
+                    name="display_copyme" 
+                    type="list" 
+                    class="btn-group"  
+                    default="" 
+                    label="MOD_CWCONTACT_FIELD_DISPLAY_COPYME_LABEL" 
+                    description="MOD_CWCONTACT_FIELD_DISPLAY_COPYME_DESC" >
+                    <option value="">MOD_CWCONTACT_FIELD_COM_OPT</option>
+                    <option value="0">CW_HIDE</option>
+                    <option value="1">CW_SHOW</option>
+                </field>
+                
+                <field
+                    type="spacer" 
+                    name="redirect_spacer" 
+                    label="MOD_CWCONTACT_SPACER_REDIRECT"
+                    class="cw_label" /> 
+        
+                <field 
+                    name="redirect_url" 
+                    type="list"   
+                    default="" 
+                    label="MOD_CWCONTACT_FIELD_REDIRECT_FORMAT_LABEL" 
+                    description="MOD_CWCONTACT_FIELD_REDIRECT_FORMAT_DESC" >
+                    <option value="">MOD_CWCONTACT_FIELD_COM_OPT</option>
+                    <option value="1">MOD_CWCONTACT_FIELD_REDIRECT_OPT1</option>
+                    <option value="2">MOD_CWCONTACT_FIELD_REDIRECT_OPT2</option>
+                </field>
+                
+                <field
+                    type="spacer" 
+                    name="style_spacer" 
+                    label="MOD_CWCONTACT_SPACER_STYLE"
+                    class="cw_label" /> 
+                
+                <field 
+                    name="form_theme" 
+                    type="folderlist" 
+                    default=""
+                    hide_default="false"
+                    hide_none="true"
+                    directory="media/coalawebcontact/components/contact/themes"
+                    label="MOD_CWCONTACT_FIELD_FORMTHEME_LABEL" 
+                    description="MOD_CWCONTACT_FIELD_FORMTHEME_DESC" >
+                </field>
+                
+                <field 
+                    name="form_width" 
+                    type="list" 
+                    default="" 
+                    label="MOD_CWCONTACT_FIELD_FORMWIDTH_LABEL" 
+                    description="MOD_CWCONTACT_FIELD_FORMWIDTH_DESC" >
+                    <option value="">MOD_CWCONTACT_FIELD_COM_OPT</option>
+                    <option value="100">100%</option>
+                    <option value="90">90%</option>
+                    <option value="80">80%</option>
+                    <option value="70">70%</option>
+                    <option value="60">60%</option>
+                    <option value="50">50%</option>
+                </field>
+
+                <field 
+                    name="submit_btn_style" 
+                    type="list" 
+                    default="" 
+                    label="MOD_CWCONTACT_FIELD_SUB_BTN_STYLE_LABEL" 
+                    description="MOD_CWCONTACT_FIELD_SUB_BTN_STYLE_DESC">
+                    <option value="">MOD_CWCONTACT_FIELD_COM_OPT</option>
+                    <option value="default">MOD_CWCONTACT_FIELD_SUB_BTN_STYLE_OPT1</option>
+                </field>
+                
+                <field 
+                    name="submit_btn" 
+                    type="text" 
+                    default="" 
+                    label="MOD_CWCONTACT_FIELD_SUB_BTN_TEXT_LABEL" 
+                    description="MOD_CWCONTACT_FIELD_SUB_BTN_TEXT_DESC" />			
+            </fieldset>
+            
+             <fieldset 
+                name="CUSTOM"
+                label="MOD_CWCONTACT_CUSTOM_OPTIONS_TAB" >
+         
+                <field 
+                    name="basic_info"
+                    type="info"
+                    default=""
+                    label="MOD_CWCONTACT_MSG_OPTIONS"/>
+
+                <field 
+                    name="display_c_input1" 
+                    type="list"
+                    default="" 
+                    label="MOD_CWCONTACT_FIELD_DISPLAY_CUSTOM_INPUT1_LABEL" 
+                    description="MOD_CWCONTACT_FIELD_DISPLAY_CUSTOM_INPUT_DESC" >
+                    <option value="">MOD_CWCONTACT_FIELD_COM_OPT</option>
+                    <option value="N">CW_HIDE</option>
+                    <option value="Y">CW_SHOW</option>
+                    <option value="R">CW_REQ</option>
+                </field>
+      
+            </fieldset>   
+    
+            <fieldset 
+                name="CAPTCHA"
+                label="MOD_CWCONTACT_CAPTCHA_OPTIONS">
+        
+                <field
+                    type="spacer" 
+                    name="captcha_spacer" 
+                    label="MOD_CWCONTACT_SPACER_CAPTCHA"
+                    class="cw_label" /> 
+        
+                <field 
+                    name="which_captcha" 
+                    type="list"  
+                    default="0" 
+                    label="MOD_CWCONTACT_FIELD_WHICH_CAPTCHA_LABEL" 
+                    description="MOD_CWCONTACT_FIELD_WHICH_CAPTCHA_DESC" >
+                    <option value="">MOD_CWCONTACT_FIELD_COM_OPT</option>
+                    <option value="none">MOD_CWCONTACT_FIELD_CAPTCHA_OPT1</option>
+                    <option value="basic">MOD_CWCONTACT_FIELD_CAPTCHA_OPT2</option>
+                </field> 
+                
+                <field 
+                    name="display_captcha_title" 
+                    type="radio" 
+                    class="btn-group btn-group-yesno"  
+                    default="1" 
+                    label="MOD_CWCONTACT_FIELD_DISPLAY_CAPTCHA_TITLE_LABEL" 
+                    description="MOD_CWCONTACT_FIELD_DISPLAY_CAPTCHA_TITLE_DESC" >
+                    <option value="0">CW_HIDE</option>
+                    <option value="1">CW_SHOW</option>
+                </field>
+  
+                <field
+                    type="spacer" 
+                    name="basic_captcha_spacer" 
+                    label="MOD_CWCONTACT_SPACER_BASICCAPTCHA"
+                    class="cw_label" />    	
+                                                                    			
+                <field 
+                    name="bcaptcha_question" 
+                    type="text" 
+                    default="" 
+                    label="MOD_CWCONTACT_FIELD_BCAPTCHA_QUESTION" 
+                    description="MOD_CWCONTACT_FIELD_BCAPTCHA_QUESTION_DESC" />
+                
+                <field 
+                    name="bcaptcha_answer" 
+                    type="text" 
+                    default="" 
+                    label="MOD_CWCONTACT_FIELD_BCAPTCHA_ANSWER" 
+                    description="MOD_CWCONTACT_FIELD_BCAPTCHA_ANSWER_DESC" />                    
+        
+            </fieldset>    
+                                   	
+            <fieldset name="advanced">
+                                
+                <field 
+                    name="module_unique_id" 
+                    type="text" 
+                    default="cwcontact1" 
+                    label="MOD_CWCONTACT_MODID" 
+                    description="MOD_CWCONTACT_MODID_DESC" />
+                                                
+                <field 
+                    name="moduleclass_sfx" 
+                    type="text"
+                    label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+                    description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+
+                <field 
+                    name="owncache" 
+                    type="list" 
+                    default="1"
+                    label="COM_MODULES_FIELD_CACHING_LABEL" description="COM_MODULES_FIELD_CACHING_DESC" >
+                    <option value="1">JGLOBAL_USE_GLOBAL</option>
+                    <option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+                </field>
+
+                <field 
+                    name="cache_time" 
+                    type="text" 
+                    default="900"
+                    label="COM_MODULES_FIELD_CACHE_TIME_LABEL" 
+                    description="COM_MODULES_FIELD_CACHE_TIME_DESC" /> 
+                
+                <field
+                    type="spacer" 
+                    name="powered_spacer" 
+                    label="MOD_CWCONTACT_SPACER_POWERED"
+                    class="cw_label" />  
+              
+                <field 
+                    name="powered"
+                    type="text"
+                    default=""
+                    label="MOD_CWCONTACT_POWEREDBY_OPT"
+                    description="MOD_CWCONTACT_POWEREDBY_DESC" />
+                
+                <field
+                    name="copy"
+                    type="radio" 
+                    class="btn-group btn-group-yesno"  
+                    default="1"
+                    label="MOD_CWCONTACT_POWERED_BY_LABEL"
+                    description="MOD_CWCONTACT_POWERED_BY">
+                    <option value="0">CW_NO</option>
+                    <option value="1">CW_YES</option>
+                </field>
+
+            </fieldset>
+            
+            <fieldset 
+                name="VERSION"
+                label="MOD_CWCONTACT_TITLE_VERSION">
+                
+                <field 
+                    name="go_pro"
+                    type="upgrade"
+                    default=""
+                    label="MOD_CWCONTACT_MSG_UPGRADE"/>
+                
+                <field 
+                    name="version_info"
+                    type="version"
+                    default=""
+                    label="com_coalawebcontact"/>
+                
+            </fieldset>
+                
+        </fields>
+    </config>
+</extension>

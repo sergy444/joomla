@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.0.0" method="upgrade">
+<version>3.0.0</version>
+<name>Mj-Slideshow</name>
+<createdOn>Dec 2013</createdOn>
+<author>Das Infomedia Team</author>
+<authorUrl>www.mojoomla.com</authorUrl>
+<authorEmail>sales@mojoomla.com</authorEmail>
+<copyright>copyright (C) 2013-2014 by Dasinfomedia - All rights reserved!</copyright>
+<license>License Info</license>
+<description>Mj-Slideshow: A slideshow which uses the 3 effect to display Image, Title, Description.
+</description>
+
+<files>
+	<filename module="mod_mj-slideshow">mod_mj-slideshow.php</filename>
+	<filename>index.html</filename>
+	<filename>mod_mj-slideshow.xml</filename>
+	<folder>tmpl</folder>
+</files>
+
+<config>
+	<fields name="params">
+		 
+		 <fieldset name="effect" label="Select Slideshow">
+		 	 <field name="SelectEffect" type="list" default="1" label="Select Option"
+					description="Select Slideshow Option">
+					<option value="1">Pattern Slideshow</option>
+					<option value="2">Slider Slideshow</option>
+					<option value="3">Video Slideshow</option>
+					
+		    </field>
+		 </fieldset>	
+				
+		<fieldset name="ImageOptions" label="Image Options">
+			
+			
+			<!--SlideShow 1-->
+			<field type="spacer" name="Image-1" label="Image1" />
+			
+			<field type="spacer" name="@spacer00" hr="true"/>
+			
+			<field name="image1" type="media" size="30" default="images/slide1.jpg" label="Image Name" 
+										description="Name of the image | Change the name of Image as per your wish." />
+			
+			<field name="title1" type="text" size="70" default="Responsive Joomla Template" label="Title" description="Enter the title for Image 1" filter="raw" />
+			
+			<field name="title11" type="text" size="70" default="Responsive Joomla Template" label="Top Title For Effect2" description="Enter the title for Effect 2" filter="raw" />
+			
+			<field name="desc1" type="textarea" rows="5" cols="30" default="Responsive Joomla Template. Works with Mobile, Tablets and Desktops/Laptops" label="Description" 
+										description="Enter the Description for Image 1" filter="raw"/>
+										
+			<field name="link1" type="text" size="70" default="" label="Link" description="Enter the link" filter="raw" />	
+										
+			<field type="spacer" name="@spacer01" hr="true"/>
+			
+			
+			<!--SlideShow 2-->
+			<field type="spacer" name="Image-2" label="Image2" />
+			
+			<field type="spacer" name="@spacer02" hr="true"/>
+			
+			<field name="image2" type="media" size="30" default="images/slide2.jpg" label="Image Name" 
+												description="Name of the image | Change name of the Image as per your wish." />
+			
+			<field name="title2" type="text" size="70" default="Innovative Slideshow and Menu." label="Title" description="Enter the title for Image 2" filter="raw"/>
+			
+			<field name="title22" type="text" size="70" default="Innovative Slideshow and Menu." label="Top Title For Effect2" description="Enter the title for Effect 2" filter="raw"/>
+			
+			<field name="desc2" type="textarea" rows="5" cols="30" default="" label="Description" description="Enter the Description for Image 2" filter="raw"/>
+			
+			<field name="link2" type="text" size="70" default="" label="Link" description="Enter the link" filter="raw" />	
+			
+			<field type="spacer" name="@spacer03" hr="true"/>
+			
+			<!--SlideShow 3-->
+			<field type="spacer" name="Image-3" label="Image3" />
+			
+			<field type="spacer" name="@spacer04" hr="true"/>
+			
+			<field name="image3" type="media" size="30" default="images/slide1.jpg" label="Image Name" 
+												description="Name of the image | Change name of the Image as per your wish." />
+			
+			<field name="title3" type="text" size="70" default="Selection from Eight different Colors." label="Title" description="Enter the title for Image 3" filter="raw"/>
+			
+			<field name="title33" type="text" size="70" default="Selection from Eight different Colors." label="Top Title For Effect2" description="Enter the title for Effect 3" filter="raw"/>
+			
+			<field name="desc3" type="textarea" rows="5" cols="30" default="" label="Description" 
+												description="Enter the Description for Image 3" filter="raw"/>
+										
+            <field name="link3" type="text" size="70" default="" label="Link" description="Enter the link" filter="raw" />										
+												
+			<field type="spacer" name="@spacer05" hr="true"/>
+			
+			
+			<!--SlideShow 4-->
+			
+			<field type="spacer" name="Image-4" label="Image4" />
+			
+			<field type="spacer" name="@spacer06" hr="true"/>
+			
+			<field name="image4" type="media" size="30" default="" label="Image Name" 
+														description="Name of the image | Change name of the Image as per your wish." />
+			
+			<field name="title4" type="text" size="70" default="" label="Title" description="" filter="raw" />
+			
+			<field name="title44" type="text" size="70" default="" label="Top Title For Effect2" description="" filter="raw" />
+			
+			<field name="desc4" type="textarea" rows="5" cols="30" default="" label="Description" 
+														description="" filter="raw"/>
+            
+			<field name="link4" type="text" size="70" default="" label="Link" description="Enter the link" filter="raw" />	 														
+            														
+			
+			<!--SlideShow 5-->
+			
+			<field type="spacer" name="Image-5" label="Image5" />
+			
+			<field type="spacer" name="@spacer07" hr="true"/>
+			
+			<field name="image5" type="media" size="30" default="" label="Image Name" 
+														description="Name of the image | Change name of the Image as per your wish." />
+			
+			<field name="title55" type="text" size="70" default="" label="Top Title For Effect2" description="" filter="raw"/>			
+			
+			
+			<field name="desc5" type="textarea" rows="5" cols="30" default="" label="Description" 
+														description="" filter="raw"/>
+            
+			<field name="link5" type="text" size="70" default="" label="Link" description="Enter the link" filter="raw" />															
+			
+			<field type="spacer" name="@spacer08" hr="true"/>
+		</fieldset>
+			
+		<fieldset name="SelectPattern" label="Select Background Pattern">	
+			<field name="slideshow_background" type="media" label="Slideshow Background Image"	description="Slideshow Background Image" />
+		</fieldset>
+		
+		<fieldset name="Selectvideo" label="Enter video url">	
+			<field name="video" type="text" size="70" default="http://www.youtube.com/watch?v=Ufnf0ecwzVI" label="Select Video Url" description="Enter Video Url" filter="raw" />		
+		</fieldset>
+		
+		<fieldset name="bottonoptions" label="Button options">	
+			<field name="btntitle" type="text" size="70" default="Are you ready?" label="Enter Button title" description="" filter="raw"/>	
+			<field name="btnhover" type="text" size="70" default="Discover!" label="Enter Hover title" description="" filter="raw"/>	
+		</fieldset>
+		
+	</fields>
+</config>
+</extension>

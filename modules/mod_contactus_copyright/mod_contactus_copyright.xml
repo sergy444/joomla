@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<extension type="module" version="3.1" client="site" method="upgrade">
+    <name>mod_contactus_copyright</name>
+	<author>Das Infomedia</author>
+	<creationDate>Feb 2014</creationDate>
+	<copyright>Copyright (C) 2005 - 2013 Open Source Matters. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>sales@dasinfomedia.com</authorEmail>
+	<authorUrl>www.mojoomla.com</authorUrl>
+    <files>
+		<filename module="mod_contactus_copyright">mod_contactus_copyright.php</filename>
+		<folder>tmpl</folder>
+		<filename>index.html</filename>
+		<filename>mod_contactus_copyright.xml</filename>
+    </files>
+	
+    <config>
+		<fields name="params">
+			<fieldset name="Advanced">
+				<field
+					name="moduleclass_sfx"
+					type="text"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+			</fieldset>
+		</fields>
+    </config>
+</extension>

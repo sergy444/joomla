@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension
+	type="module"
+	version="1.7"
+	client="site"
+	method="upgrade">
+    <name>Sot Virtuemart Slideshow</name>
+    <creationDate>Oct 2010</creationDate>
+    <author>Sky Of Tech</author>
+    <copyright>(C) 2011 Sky Of Tech</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+    <authorEmail>contactnum1@gmail.com</authorEmail>
+    <authorUrl>http://skyoftech.com</authorUrl>
+    <version>1.0</version>
+    <description>SOT VM SLIDESHOW DESC</description>
+    <files>
+         <filename module="mod_sot_vm_slideshow">mod_sot_vm_slideshow.php</filename>
+         <filename module="mod_sot_vm_slideshow">mod_sot_vm_slideshow.xml</filename>
+		 <filename module="mod_sot_vm_slideshow">index.html</filename>
+		 <filename module="mod_sot_vm_slideshow">LICENSE.txt</filename>
+         <filename module="mod_sot_vm_slideshow">helper.php</filename>         
+         <folder module="mod_sot_vm_slideshow">assets</folder>
+         <folder module="mod_sot_vm_slideshow">tmpl</folder>
+         <folder module="mod_sot_vm_slideshow">elements</folder>
+		 <folder module="mod_sot_vm_slideshow">libs</folder>
+    </files>
+	<languages folder="language/en-GB">
+		<language tag="en-GB">en-GB.mod_sot_vm_slideshow.ini</language>
+		<language tag="en-GB">en-GB.mod_sot_vm_slideshow.sys.ini</language>
+	</languages>	
+<config>	   
+   <fields name="params">		   
+   <fieldset name="data" label="Data Option" addfieldpath="/modules/mod_sot_vm_slideshow/elements/">
+			<field type="logo" default="" ></field> 				
+
+			<field name="moduleclass_sfx" type="text" default="" label="VM_MODULE_CLASS_SUFFIX" description="VM_MODULE_CLASS_SUFFIX_DESCRIPTION"/>			
+			<field name="source" type="list" default="filter" label="Source" description="">
+			  <option value="filter">Retrieve products from categories</option>
+			  <option value="specific">Select specific products</option>
+			</field>			
+			<field name="virtuemart_category_id" type="vmcategories"  value_field="category_name" label="Virtuemart Category" description="Select Category" />
+			<field name="specific_product_ids" type="text" default="" label="Specific product ids" description="Type product ids that you want to show. Format: id1,id2,id3,...,idn" size="30" />
+			
+			<field name="NumberOfProducts" type="text" default="5"
+				label="Number of Products"
+				description="The Number of Products that are member of the Scrollshow" />
+			<field name="featuredProducts" type="radio" default="no"
+				label="Featured Products Only"
+				description="Display only products that are featured (marked special)">
+				<option value="yes">Yes</option>
+				<option value="no">No</option>
+			</field>
+			<field name="ShowProductsInStock" type="radio" default="1"
+				label="Show products are out of stock"
+				description="Show products are out of stock">
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+			</field>
+			<field name="SortMethod" type="list" default="random"
+				label="Order the products"
+				description="Defines the display order of the products.">
+				<option value="newest">Newest</option>
+				<option value="oldest">Oldest</option>
+				<option value="random">Random</option>
+				<option value="ordering">Ordering</option>
+				<option value="product_price">Product Price</option>								
+			</field>
+		
+		<!-- Group 2: For title and link -->
+		<field name="" type="header" default="Title and Link Options" label="Title and Link Options" description=""/>		
+			<field name="limittitle" type="text" default="25" label="Max Length of Title" description="Max length of title" />
+			<field name="target" type="list" default="_self" label="Open Link" description="The Type shows when you click on the link">
+				<option value="_blank">New Window</option>
+				<option value="_self">Same Window</option>					
+			</field>
+	
+			<field name="link_image" type="list" default="0" label="Link for image" description="Link for image">
+				<option value="1">Yes</option>
+				<option value="0">No</option>			
+			</field>
+		
+		<!-- Group 3: For Images -->
+		<field name="" type="header" default="Images Options" label="Images Options" description=""/>								
+			<field name="thumb_width" type="text" default="940" label="Large Thumbnail Width" description="The width of thumbnail image. The module will auto resize your image to your width" />
+			<field name="thumb_height" type="text" default="450" label="Large Thumbnail Height" description="The height of thumbnail image. The module will auto resize your image to your height" />
+			
+			<field name="cropresizeimage" type="list" default="0" label="Resized Image Type" description="Resized Image Type">
+				<option value="0">Resized</option>
+				<option value="1">Crop</option>
+			</field>		
+		
+		<!-- Group 4: Effect -->
+		<field name="" type="header" default="Effect Options" label="Effect Options" description=""/>								
+			<field name="auto_play" type="list" default="1" label="Auto play" description="Set for slideshow auto play or not.">
+				<option value="1">Yes</option>
+				<option value="0">No</option>			
+			</field>
+			<field name="timer" label="Timer" description="Time to change image (ms). larger->slower" type="text" default="4000"></field>		
+			<field name="hover" type="list" default="1" label="Stop when hover" description="Stop when hover">
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+			</field>		
+			<field name="opacity" label="Opacity Title and Caption" description="Set opacity for Title and Caption. value: 0.1->1" type="text" default="0.7"></field>
+
+		<!-- Group 5: Themes and layouts -->
+		<field name="" type="header" default="Themes and layouts Options" label="Themes and layouts Options" description=""/>								
+			<field name="show_navigation" label="Show Navigation" default="1" type="list" description="Select to show navigation or not">
+				<option value="1">yes</option>
+				<option value="0">no</option>
+			</field>
+			<field name="navigation_position" default="bottom" type="list" label="Select Navigation's poition" description="Chose position for navigation (bottom, top)">
+				<option value="bottom">bottom</option>
+				<option value="top">top</option>		
+			</field>	
+			
+			<field name="navigation_type" default="square" type="list" label="Select Navigation's type" description="Chose type for navigation (number, square)">
+				<option value="square">Square</option>
+				<option value="number">Number</option>
+			</field>
+				
+			<field name="effect" type="list" default="default" label="Select an Effect" description="Please select an Effect for the module">
+				<option value="swirl">Swirl</option>
+				<option value="rain">Rain</option>
+				<option value="straight">Straight</option>
+				<option value="random">Random</option>
+			</field>
+	
+		<field name="" type="header" default="Using Thumbnail Theme Options" label="Using Thumbnail Theme Options" description=""/>	
+		<field name="show_readmore" type="list" default="1" label="Show Read More Link" description="Show Read More Link">
+			<option value="1">Yes</option>
+			<option value="0">No</option>			
+		</field>
+		<field name="limit_description" type="text" default="200" label="Max Length of Description" description="Max length of Description" />
+   </fieldset>
+   
+    <fieldset name="advanced" label="advanced">
+		<field name="cache" type="list" default="0" label="Caching" description="Caching">
+			<option value="1">Use Cache</option>
+			<option value="0">Do not use Cache</option>
+		</field>
+		<field name="cache_time" type="text" default="300" label="Cache time" description="Cache time" />		
+		<field name="description" type="textarea" cols="50" rows="10" default="" label="Description" description=""/>
+	</fieldset>
+
+</fields>
+</config>
+</extension>

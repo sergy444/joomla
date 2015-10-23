@@ -1,0 +1,146 @@
+/* content plugin styles */
+.jcomments-links {margin-top: 10px; clear:both; text-align: left}
+.comments-link, .readmore-link{padding: 0 5px 5px 14px;background-image: url(images/jc_blog.gif);background-repeat: no-repeat}
+.comments-link {background-position: 0 -27px}
+.readmore-link {background-position: 0 2px}
+	
+.comments-form-message-error {background: #FFD86F url(images/jc_error.gif) no-repeat 4px 50%}
+.comments-form-message-info {background: #DFEEFF url(images/jc_info.gif) no-repeat 4px 50%}
+
+.comments-form-message-error,.comments-form-message-info {
+    height: 35px;
+    padding-left: 30px;
+    padding-top: 5px;
+	margin-bottom:25px;
+}
+
+/* JComments common styles */
+#jc a:link, #jc a:visited, #jc a:hover {outline: none} 
+#jc .clear {clear: both; height: 1px; overflow: hidden}
+#jc .busy { display:none; margin: 3px auto; padding: 0; width: 16px; height: 16px; background: url(images/jc_busy.gif) no-repeat; }
+
+#jc h4 {color: #555;background-color: inherit;font-weight: bold;text-align: left;border-bottom: 1px solid #D2DADB;padding: 0 0 2px 0;margin-bottom: 10px}
+
+#jc p.message {color: #777;background-color: inherit; background-image: none; text-align: center;text-decoration: none;text-transform: none;text-indent: 0;padding: 5px 0 0 0;border-top: 1px solid #D2DADB}
+
+#comments {margin: 0;padding: 0;width: 100%;text-align: left;text-decoration: none;text-transform: none;text-indent: 0}
+#comments a {color: #222222;background-color: inherit;font-weight: normal;text-decoration: none}
+#comments a:active, #comments a:focus, #comments a:hover { background-color: transparent !important;}
+#comments a[rel*=external], #comments a[rel*=external]:active, #comments a[rel*=external]:hover, #comments a[rel*=external]:focus {background: url(images/jc_link.gif) no-repeat center right;padding: 0 10px 0 0;margin: 0 2px;display: inline-block}
+	
+/* RSS and Refresh*/
+#comments .rss, #comments .refresh, #comments .subscribe {padding: 0 0 0 14px;margin: 0 2px;border: none;display: inline-block}
+#comments .rss {background: url(images/jc_rss.gif) no-repeat center left !important}
+#comments .refresh {background: url(images/jc_refresh.gif) no-repeat center left !important}
+#comments .subscribe {background: url(images/jc_subscribe.gif) no-repeat center left !important}
+#comments h4 .rss, #comments h4 .refresh {padding: 0 0 0 10px;margin: 0 0 0 5px;display: inline-block}
+
+/* List footer */
+#comments-list-footer {margin: 0 0 10px 20px !important}
+
+/* Show/hide form */
+#comments-form-link .showform {margin: 5px 0 0 22px;padding: 0 0 5px 14px;background: url(images/jc_blog.gif) no-repeat 0 -28px;border: none;font-weight: bold;display: block}
+
+/* Comment */
+#comments .comment-box {margin: 0;padding: 0; color: #999}
+#comments .comment-avatar {float: left;margin: 0;padding: 0}
+#comments .avatar-indent {padding-left: 40px}
+
+#comments .comment-anchor {color: #777; text-decoration: none; border: none}
+#comments .comment-author, #comments .author-homepage {color: #3c452d;font: bold 1em Verdana, Arial, Sans-Serif;margin: 0;padding: 0}
+#comments .author-homepage {text-decoration: none; border-bottom: 1px dotted #3c452d}
+#comments .comment-title {color: #b01625;font: bold 1em Verdana, Arial, Sans-Serif;margin: 0;padding: 0}
+
+/* Avatar */
+#comments .comment-avatar img {width: 32px;border: none !important;}
+
+/* Date and Time*/	
+#comments .comment-date {font-size: 10px;color: #999;margin: 0;padding: 0 0 0 12px;background: url(images/jc_date.gif) no-repeat center left}
+#comments .comment-body {color: #777;margin: 6px 0 0;padding:0 0 2px}
+
+/* Quote, Code and Hidden block styles */
+#comments .quote, #comments blockquote, #comments .code, #comments code, #comments pre {margin: 5px 0 5px 10px; display: block; clear: both; background-image: none}
+#comments blockquote, #comments .hidden, #comments code, #comments pre {color: #222222;text-align: left;padding: 8px;margin-bottom: 8px}
+#comments blockquote, #comments .hidden {border: 1px dashed #849B9F}
+#comments code, #comments pre {border: 1px solid #dedede;overflow: hidden;white-space:normal}
+#comments .code {background: none; border: none; padding:0}
+#comments .quote {color: #777}
+#comments .hidden {clear: both;display: block;margin: 5px 0}
+
+/* Quote and Reply to buttons panel */
+#comments .comments-buttons {height: 15px;float: right}
+
+#comments .email, #comments .emailactive {font: normal 1em Verdana, Arial, Sans-Serif; text-decoration: none; white-space: normal; margin: 0; padding: 0; line-height: 10px; cursor: pointer; border-bottom: 1px dotted #999}
+#comments .email {color: #444; background-color: inherit}
+#comments .emailactive {color: #cc0000; background-color: inherit}
+#comments .email img, #comments .emailactive img {padding: 0}
+
+#comments p {font: normal 1em Verdana, Arial, Sans-Serif;margin: 5px 5px 5px 0;	padding: 0; text-decoration: none; text-transform: none; text-indent: 0}
+
+#comments .comment-body img {padding: 0; border: 0 none}
+#comments .comment-body .img {padding: 4px 0 !important; max-width: 500px}
+
+#comments .toolbar {clear: both;color: #ccc;border-top: 1px solid #ccc;margin: 8px 0 0 0;padding: 5px 0 0 0}
+#comments .toolbar a, #comments .toolbar a:hover {float: left; margin: 0 2px 0 0; width: 16px;height: 16px;cursor: pointer;background-color: transparent !important;background-image: url(images/jc_toolbar.gif) !important}
+#comments .toolbar-button-edit {background-position: 0 0 !important}
+#comments .toolbar-button-delete {background-position: 0 -16px !important}
+#comments .toolbar-button-unpublish {background-position: 0 -32px !important}
+#comments .toolbar-button-publish {background-position: 0 -48px !important}
+#comments .toolbar-button-ip {background-position: 0 -64px !important}
+#comments .toolbar-button-ban {background-position: 0 -80px !important}
+
+/* Comments list */
+#comments .comments-list {margin-left: 20px;height: 1%}
+#comments .even, #comments .odd {background-image: none;background-color: transparent;color: #3c452d;border: none; margin-left: 0;margin-bottom: 10px;padding: 0}
+
+#comments-list .comments-inline-edit {padding: 5px; margin: 5px 0; color: inherit;background-color: #fff;border: 1px solid #ccc}
+
+
+/* Pagination */
+body #jc #nav-bottom, body #jc #nav-top {line-height: 19px !important;line-height: 17px;height: auto !important;text-align: center; margin: 0 auto;}
+#jc #nav-bottom span.page, #jc #nav-top span.page {color: #777;background-color: #eee;border: 1px solid #d6dadd}
+#jc #nav-bottom span.hoverpage, #jc #nav-top span.hoverpage {color: #777;background-color: #e8e9ea;border: 1px solid #d6dadd}
+#jc #nav-bottom span, #jc #nav-top span {color: #777;background-color: inherit;font-size: 10px;font-family: Arial, sans-serif;margin: 0 2px;height: 15px;padding: 2px 8px;cursor: pointer;vertical-align: top;display: inline-block;}
+#jc #nav-bottom span.activepage, #jc #nav-top span.activepage {font-weight: bold;color: inherit;background-color: white}
+#jc div#nav-bottom, #jc div#nav-top {position: relative;z-index: 2;width: 100%}
+#jc div#nav-bottom {margin: 10px 0 0 0;padding: 0;background: url(images/jc_dot.gif) repeat-x top left}
+#jc #nav-bottom span.activepage {border-bottom: 1px solid #d6dadd;border-left: 1px solid #d6dadd;border-right: 1px solid #d6dadd;border-top: 1px solid white}
+#jc div#nav-top {margin: 10px 0;background: url(images/jc_dot.gif) repeat-x bottom}
+#jc #nav-top span.activepage {border-top: 1px solid #d6dadd;border-left: 1px solid #d6dadd;border-right: 1px solid #d6dadd;border-bottom: 1px solid white}
+
+#nav-bottom span.page {display:inline-block;}
+
+/* Vote */
+#jc span.comments-vote {width: 6em;height: 15px;float: right}
+#jc span.comments-vote a{width: 15px;height: 14px;float: left;margin: 0 3px 0 0;display: block;background-repeat: no-repeat;background-image: url(images/jc_vote.gif);border: none !important; text-decoration: none}
+#jc span.comments-vote .busy{margin: 0; float: right; width: 16px}
+#jc .vote-good{background-position: 0 0}
+#jc .vote-poor, #jc a.vote-poor:hover{background-position: -15px 0}
+#jc span.vote-good,#jc span.vote-poor,#jc span.vote-none{margin: 0;float: right;font: bold 1em Verdana, Arial, Sans-Serif;line-height: 14px}
+#jc span.vote-good{color: #339900}
+#jc span.vote-poor{color: #CC0000}
+#jc span.vote-none{color: #A9A9A9}
+
+/* BBCode */
+#jc span.bbcode{width: auto;height: 23px;display: block;margin-bottom: 5px}
+#jc .bbcode a, #jc .bbcode a:focus, #jc .bbcode a:active, #jc .bbcode a:hover{width: 23px;height: 23px;float: left;margin: 0 2px 0 0;display: block;background-color:transparent !important;background-repeat: no-repeat;background-image: url(images/jc_bbcodes.gif);text-decoration:none;border:none !important}
+#jc a.bbcode-empty{background-position: 0 0}
+#jc a.bbcode-b{background-position: -30px 0 !important}
+#jc a.bbcode-i{background-position: -60px 0 !important}
+#jc a.bbcode-u{background-position: -90px 0 !important}
+#jc a.bbcode-s{background-position: -120px 0 !important}
+#jc a.bbcode-url{background-position: -150px 0 !important}
+#jc a.bbcode-img{background-position: -180px 0 !important}
+#jc a.bbcode-list{background-position: -210px 0 !important}
+#jc a.bbcode-hide{background-position: -240px 0 !important}
+#jc a.bbcode-quote{background-position: -270px 0 !important}
+#jc a.bbcode-smile{background-position: -300px 0 !important}
+#jc a.bbcode-youtube{background-position: -330px 0 !important}
+#jc a.bbcode-google{background-position: -360px 0 !important}
+#jc a.bbcode-wiki{background-position: -390px 0 !important}
+#jc a.bbcode-facebook{background-position: -420px 0 !important}
+#jc a.bbcode-flickr{background-position: -450px 0 !important}
+
+#jc span.bbcode img {width: 23px;height: 23px;float: left;margin: 0 2px 0 0}
+#jc .custombbcode {width: 23px;height: 23px;float: left;margin: 0 2px 0 0;display: block;text-decoration:none;cursor: pointer}
+

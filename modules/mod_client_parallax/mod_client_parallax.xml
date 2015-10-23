@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5.0" client="site" method="upgrade">
+    <name>mod_client_parallax</name>
+	<author>Das Infomedia</author>
+	<creationDate>Feb 2014</creationDate>
+	<copyright>Copyright (C) 2005 - 2013 Open Source Matters. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>sales@dasinfomedia.com</authorEmail>
+	<authorUrl>www.mojoomla.com</authorUrl>
+    <files>
+		<filename module="mod_client_parallax">mod_client_parallax.php</filename>
+		<folder>tmpl</folder>
+		<filename>index.html</filename>
+		<filename>mod_client_parallax.xml</filename>
+    </files>
+	
+    <config>
+		<fields name="params">
+			<fieldset name="Advanced">
+				<field
+					name="moduleclass_sfx"
+					type="text"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+			</fieldset>
+		</fields>
+    </config>
+</extension>

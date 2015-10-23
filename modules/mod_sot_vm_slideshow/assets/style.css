@@ -1,0 +1,35 @@
+/* CSS Document */
+
+.sot-article-slideshow {overflow:hidden;position: relative; background-position: left top;}
+.sot-coin-slider { overflow: hidden; zoom: 1; position: relative; }
+.sot-coin-slider a{ text-decoration: none; outline: none; border: none!important; }
+
+.sot-coin-slider .sot-cs-title { width: 100%; padding: 15px 10px 10px 15px; background-color: #222222; color: #FFFFFF;}
+
+.sot-coin-slider .sot-cs-prev, 
+.sot-coin-slider .sot-cs-next { background-color: #222222; color: #FFFFFF; padding: 0px 10px;}
+
+.sot-coin-slider .sot-content{ padding: 0px 5px 0px 0px;
+font-size:16px;
+font-family: 'Raleway', sans-serif;
+}
+.sot-coin-slider .sot-content .sot-main-content{position:relative; width:98%
+font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+font-size:13px;
+}
+.sot-coin-slider .sot-readmore{position:relative; vertical-align:bottom}
+.sot-coin-slider .sot-readmore a{ color:#00CCCC!important; font-weight:bold!important;}
+.sot-coin-slider .sot-readmore a:hover{ color: #FF9900!important;}
+.sot-price-slideshowpro{ font-weight:normal; padding:5px 10px 0px 0px}
+.sot-price-slideshowpro span{ color:#E70123; font-weight:normal;}
+.sot_addtocart_button_module{ background:url("imgs/add_cart.png") no-repeat; text-indent:1000px; width:113px; border:none; cursor:pointer}
+.sot-price-label{ color:#ffffff; float:left}
+.sot-price-content{ overflow: hidden; position:relative; left:4px}
+.sot-basePrice{ text-decoration:line-through; color:#FF0000}
+
+.sot-cs-next, .sot-cs-prev {
+    top: 0px!important;
+}
+.sot-cs-buttons {
+    margin-left: -105px!important;
+}

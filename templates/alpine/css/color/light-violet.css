@@ -1,0 +1,79 @@
+/*
+* @package Alpine
+* @copyright (C) 2014 by mojoomla.com - All rights reserved!
+* @license GNU General Public License, version 2 (http://www.gnu.org/licenses/gpl-2.0.html)
+* @author mojoomla.com <sales@mojoomla.com>
+*/
+
+a, .section-title h1 i, .pricing-box li h1, .slide-content h1 strong, .timeline-content #timeline .post-body .blog-title h1 a:hover, .service-items a:hover, .service-items a:hover h3, .form-group label.error, .blog-content a:hover, .panel-group .panel-heading a, .panel-group .panel-heading a:hover, .media .media-body .lead {color: #ff0096;}/* COLOR STANDARD */
+ .section-title .lead strong, .progress .progress-bar, .nav-tabs > li > a, .parallax-box a:hover, .pager .puls > a:hover, .pricing-box .pricing-featured li.price-row, .pager .pagination li a:hover, .widget .widget-tag li a:hover, .hi-icon-effect-1 .hi-icon, .mybutton a span, .mybutton button span, .csstransforms3d .mybutton a:hover span::before, .csstransforms3d .mybutton button:hover span::before, .mybutton2 a span, .mybutton2 button span {
+ background: #ff0096;}/* BACKGROUND STANDARD COLOR */
+.nav-tabs > li > a, .form-group .form-control.error, .form-group .form-control.error:focus {border: 1px solid #ff0096;}/* BORDER STANDARD COLOR */
+.hi-icon-effect-1 .hi-icon:after {box-shadow: 0 0 0 4px #ff0096;}/* BOX-SHADOW STANDARD COLOR */
+.no-touch .hi-icon-effect-1 .hi-icon:hover {background: rgba(255, 0, 150, 1);}/* BACKGROUND STANDARD COLOR(RGBA) */
+.parallax-box a:hover p, .parallax-background-color p {color: #ff96d4;}/* COLOR LIGHT */
+ .csstransforms3d .mybutton a span::before, .csstransforms3d .mybutton button span::before, .mybutton2 a::before {
+ background: #b6006b;} /* BACKGROUND DARK COLOR */
+.pricing-box .pricing-featured li.price-row span {color:#b6006b;}/* DARK COLOR */
+.parallax-background-color {background: rgba(182, 0, 107, 0.9);}/* DARK BACKGROUND COLOR(RGBA) */
+/* New code */
+
+#comments a:active, #comments a:focus, #comments a:hover {color: #ff0096 !important;}
+.fea_prd .block-content .additionnal a input {background-color: #ff0096;}
+.block-latest .bx-wrapper .bx-controls-direction a:hover {background-color: #ff0096;}
+.latest_prd .block-content .product-name {background: none repeat scroll 0 0 #ff0096;}
+.block-content .bx1:hover .hover {background: none repeat scroll 0 0 #ff0096;}
+thead tr {background-color: #ff0096 !important;}
+.pagination ul li {background-color: #ff0096;}
+.button_sel_curncy {background-color: #ff0096;}
+.input.validate {background-color: #ff0096;}
+.product.one_third:hover .p_name, .product.one_third:hover .product_s_desc, .product.one_third:hover .cat_price {border-color: #ff0096;}
+.category_prodcut .one_third:hover {border-color:#ff0096;}
+.grid_view .cat_price .PricesalesPrice {color: #ff0096 !important;}
+.list_view .content_section h3 a {color: #ff0096;}
+.list_view .cat_price .PricesalesPrice {color: #ff0096!important;}
+.list_view .cat_price a.addtocart_list {background-color: #ff0096;}
+.view_as a:hover i {color:#ff0096!important;}
+#form-login .button {background: none repeat scroll 0 0 #ff0096;}
+input.details-button {background: none repeat scroll 0 0 #ff0096 !important;}
+.billto-shipto a.product-details, .billto-shipto a.details, div.details {background:none #ff0096 !important;}
+.billto-shipto a.product-details:hover, .billto-shipto a.details:hover, div.details:hover {background-color: #ff0096;}
+.checkout-button-top .vm-button-correct {background:none #ff0096 !important;}
+.control-buttons .vm-button-correct, .control-buttons .default {background:none #ff0096 !important;}
+.cart-summary .buttonBar-right .vm-button-correct, .buttonBar-right .vm-button-correct, span.addtocart-button input.addtocart-button, .back-to-category .product-details, .virtuemart_search input.srch_btn, .write-reviews input.sub_review, .shopping_cart .show_cart_custom a, .add-to-cart-alt input.addtocart-button, .add-to-row input.addtocart-button, .cmp_btn a {background: none repeat scroll 0 0 #ff0096!important;}
+.right .shopping_cart a, .right_sidebar .shopping_cart a {color: #ff0096;}
+.fnt_awsm i {background-color: #ff0096;}
+#edit-profile-cust {background: none repeat scroll 0 0 #ff0096;}
+.section-title h3 {color: #ff0096;}
+.right_sec ul.ic_list1.active {background-color: #ff0096;}
+.right_sec ul.ic_list1:hover {background-color: #ff0096;}
+.vm_viewcart, .lof_vm_bottom_btn .lofclose {background-color: #ff0096;}
+.lof_info, .lof_quantity, .lof_price {color: #ff0096 !important;}
+.block-subtitle {color:#ff0096;}
+#vm_module_cart .lof_vm_bottom .lof_item a {color: #ff0096;}
+.prd_detail h1.product_name {color: #ff0096;}
+#com-form-login-remember .default, .order-view .default {background: none repeat scroll 0 0 #ff0096;}
+.right_sec h2 {color: #ff0096;}
+.product-share .share-label {color:#ff0096;}
+.sbOptions a:hover, .sbOptions a:focus, .sbOptions a.sbFocus {color: #ff0096!important;}
+#site-searchform #searchsubmit {background-color:#ff0096;}
+.shop_artical .img-responsive.img-center.img-rounded {background-color:#ff0096;}
+.grid_view .image_section .options a:after {background: none repeat scroll 0 0 #ff0096;}
+/**** Quanity image ****/
+span.quantity-controls input.quantity-plus {background: url("../../images/color/quantiry/color_3.png") repeat-x scroll 0 0 rgba(0, 0, 0, 0)!important;margin-bottom: 2px;}
+span.quantity-controls input.quantity-minus {background: url("../../images/color/quantiry/color_3.png") repeat-x scroll 15px 0 rgba(0, 0, 0, 0)!important;}
+.acc-trigger a {background: url("../../images/color/accordian/accordion-ico-3.png") no-repeat 20px 13px!important;}
+.acc-trigger.active a {background-position: 20px -58px!important;cursor: default;}
+.acc-trigger a:hover, .acc-trigger.active a, .acc-trigger.active a:hover {color: #ff0096;}
+.pagination li span:hover, .vm-pagination li span:hover {background-color: #ff0096;color: #FFFFFF;}
+.pagination li a:hover, .vm-pagination li a:hover {background-color: #ff0096;color: #FFFFFF;}
+.fa.fa-home.fa-2x, .fa.fa-truck.fa-2x {color: #ff0096;}
+.cart_page .data-table thead th {background: none repeat scroll 0 0 #ff0096;}
+.breadcrumbs.mj-breadcrumbs > span, .mini-cart-layer span#cartHeader, .vm_sum {color: #ff0096;}
+.billto-shipto a.product-details, .billto-shipto a.details, div.details, .cart .continue, input.details-button, .checkout-button-top .vm-button-correct, .popup .continue, .popup .showcart {background: none repeat scroll 0 0 #ff0096 !important;}
+.continue_link > span {background: none repeat scroll 0 0 #ff0096 !important;}
+.cart-view h3 {color:#ff0096;}
+.cart-extra-tab li.expanded {background: none repeat scroll 0 0 #ff0096;}
+.headstyle, #paymentForm h2 {color: #ff0096;}
+.sectiontableentry1 h3 {color:#ff0096!important;}
+#comments .comment-author, #comments .author-homepage {color: #ff0096!important;}

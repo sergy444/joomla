@@ -1,0 +1,530 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <fieldset 
+        name="GENERAL"
+        label="COM_CWCONTACT_GENERAL_OPTIONS_TAB"
+        addfieldpath="plugins/system/cwgears/fields">
+        
+        <field 
+            name="css_import" 
+            type="csscom"/>
+        
+        <field 
+            name="general_header"
+            type="header"
+            default="COM_CWCONTACT_GENERAL_TITLE" 
+            label=""
+            description="" />
+                
+        <field 
+            name="recipient" 
+            type="email" 
+            default="" 
+            label="COM_CWCONTACT_FIELD_RECIPIENT_LABEL" 
+            description="COM_CWCONTACT_FIELD_RECIPIENT_DESC" />
+                
+        <field 
+            name="email_subject" 
+            type="text" 
+            default="Default Subject" 
+            label="COM_CWCONTACT_FIELD_PRE_SUBJECT_LABEL" 
+            description="COM_CWCONTACT_FIELD_PRE_SUBJECT_DESC" />
+        
+        <field
+            type="spacer" 
+            name="email_spacer_format" 
+            label="COM_CWCONTACT_SPACER_EMAIL"
+            class="cw_label" /> 
+        
+        <field 
+            name="email_format" 
+            type="list"   
+            default="rich" 
+            label="COM_CWCONTACT_FIELD_EMAIL_FORMAT_LABEL" 
+            description="COM_CWCONTACT_FIELD_EMAIL_FORMAT_DESC" >
+            <option value="nohtml">COM_CWCONTACT_FIELD_EFORMAT_OPT1</option>
+        </field>
+                
+        <field
+            type="spacer" 
+            name="redirect_spacer" 
+            label="COM_CWCONTACT_SPACER_REDIRECT"
+            class="cw_label" /> 
+        
+        <field 
+            name="redirect_url" 
+            type="list"   
+            default="2" 
+            label="COM_CWCONTACT_FIELD_REDIRECT_FORMAT_LABEL" 
+            description="COM_CWCONTACT_FIELD_REDIRECT_FORMAT_DESC" >
+            <option value="1">COM_CWCONTACT_FIELD_REDIRECT_OPT1</option>
+            <option value="2">COM_CWCONTACT_FIELD_REDIRECT_OPT2</option>
+        </field>
+        
+        <field
+            type="spacer" 
+            name="fdisplay_spacer" 
+            label="COM_CWCONTACT_SPACER_FDISPLAY"
+            class="cw_label" />  
+        
+        <field 
+            name="display_name" 
+            type="list" 
+            default="Y" 
+            label="COM_CWCONTACT_FIELD_DISPLAY_NAME_LABEL" 
+            description="COM_CWCONTACT_FIELD_DISPLAY_NAME_DESC" >
+            <option value="N">CW_HIDE</option>
+            <option value="Y">CW_SHOW</option>
+            <option value="R">CW_REQ</option>
+        </field>
+                
+        <field 
+            name="display_subject" 
+            type="list" 
+            default="Y" 
+            label="COM_CWCONTACT_FIELD_DISPLAY_SUBJECT_LABEL" 
+            description="COM_CWCONTACT_FIELD_DISPLAY_SUBJECT_DESC" >
+            <option value="N">CW_HIDE</option>
+            <option value="Y">CW_SHOW</option>
+            <option value="R">CW_REQ</option>
+        </field>
+        
+        <field 
+            name="display_copyme" 
+            type="radio" 
+            class="btn-group btn-group-yesno"  
+            default="1" 
+            label="COM_CWCONTACT_FIELD_DISPLAY_COPYME_LABEL" 
+            description="COM_CWCONTACT_FIELD_DISPLAY_COPYME_DESC" >
+            <option value="0">CW_HIDE</option>
+            <option value="1">CW_SHOW</option>
+        </field>
+                
+        <field
+            type="spacer" 
+            name="style_spacer" 
+            label="COM_CWCONTACT_SPACER_STYLE"
+            class="cw_label" />  
+        
+        <field 
+            name="cwc_load_css" 
+            type="radio" 
+            class="btn-group btn-group-yesno"  
+            default="1" 
+            label="COM_CWCONTACT_LOADCSS_LABEL" 
+            description="COM_CWCONTACT_LOADCSS_DESC">
+            <option value="0">CW_NO</option>
+            <option value="1">CW_YES</option>
+        </field>
+                
+        <field 
+            name="form_theme" 
+            type="folderlist" 
+            default="light"
+            hide_default="true"
+            hide_none="true"
+            directory="media/coalawebcontact/components/contact/themes"
+            label="COM_CWCONTACT_FIELD_FORMTHEME_LABEL" 
+            description="COM_CWCONTACT_FIELD_FORMTHEME_DESC" >
+        </field>
+        
+        <field 
+            name="form_width" 
+            type="list" 
+            default="100" 
+            label="COM_CWCONTACT_FIELD_FORMWIDTH_LABEL" 
+            description="COM_CWCONTACT_FIELD_FORMWIDTH_DESC" >
+            <option value="100">100%</option>
+            <option value="90">90%</option>
+            <option value="80">80%</option>
+            <option value="70">70%</option>
+            <option value="60">60%</option>
+            <option value="50">50%</option>
+        </field>
+
+        <field 
+            name="submit_btn_style" 
+            type="list" 
+            default="default" 
+            label="COM_CWCONTACT_FIELD_SUB_BTN_STYLE_LABEL" 
+            description="COM_CWCONTACT_FIELD_SUB_BTN_STYLE_DESC">
+            <option value="default">COM_CWCONTACT_FIELD_SUB_BTN_STYLE_OPT1</option>
+        </field>
+                
+        <field 
+            name="submit_btn" 
+            type="text" 
+            default="" 
+            label="COM_CWCONTACT_FIELD_SUB_BTN_TEXT_LABEL" 
+            description="COM_CWCONTACT_FIELD_SUB_BTN_TEXT_DESC" />		
+        
+    </fieldset>    
+
+    <fieldset 
+        name="CUSTOM"
+        label="COM_CWCONTACT_CUSTOM_OPTIONS_TAB" >
+       
+        <field 
+            name="message_header"
+            type="header"
+            default="COM_CWCONTACT_CUSTOM_TITLE" 
+            label=""
+            description="" />
+                               
+        <field
+            type="spacer" 
+            name="custom1_spacer" 
+            label="COM_CWCONTACT_SPACER_CUSTOM1"
+            class="cw_label" /> 
+        
+        <field 
+            name="display_c_input1" 
+            type="list"
+            default="N" 
+            label="COM_CWCONTACT_FIELD_DISPLAY_CUSTOM_INPUT1_LABEL" 
+            description="COM_CWCONTACT_FIELD_DISPLAY_CUSTOM_INPUT_DESC" >
+            <option value="N">CW_HIDE</option>
+            <option value="Y">CW_SHOW</option>
+            <option value="R">CW_REQ</option>
+        </field>
+        
+        <field 
+            name="custom1_lbl" 
+            type="text" 
+            default="" 
+            label="COM_CWCONTACT_FIELD_CUSTOM1_LABEL" 
+            description="COM_CWCONTACT_FIELD_CUSTOM1_DESC" />
+                
+        <field 
+            name="custom1_hint" 
+            type="text" 
+            default="" 
+            label="COM_CWCONTACT_FIELD_CUSTOM1_HINT_LABEL" 
+            description="COM_CWCONTACT_FIELD_CUSTOM1_HINT_DESC" />
+        
+        <field 
+            name="msg_custom1_missing" 
+            type="text" 
+            default="" 
+            size="20" 
+            label="COM_CWCONTACT_CUSTOM1_MISSING_LABEL" 
+            description="COM_CWCONTACT_CUSTOM1_MISSING_DESC" />
+        
+    </fieldset>   
+    
+    <fieldset 
+        name="MESSAGES"
+        label="COM_CWCONTACT_MESSAGE_OPTIONS_TAB" >
+        
+        <field 
+            name="message_header"
+            type="header"
+            default="COM_CWCONTACT_MESSAGE_TITLE" 
+            label=""
+            description="" />
+                    
+        <field 
+            name="msg_remail_missing" 
+            type="text" 
+            default="" 
+            size="20" 
+            label="COM_CWCONTACT_REMAIL_MISSING_LABEL" 
+            description="COM_CWCONTACT_REMAIL_MISSING_DESC" />
+                
+        <field 
+            name="msg_subject_missing" 
+            type="text" 
+            default="" 
+            size="20" 
+            label="COM_CWCONTACT_SUBJECT_MISSING_LABEL" 
+            description="COM_CWCONTACT_SUBJECT_MISSING_DESC" />
+                
+        <field 
+            name="msg_name_missing" 
+            type="text" 
+            default="" 
+            size="20" 
+            label="COM_CWCONTACT_NAME_MISSING_LABEL" 
+            description="COM_CWCONTACT_NAME_MISSING_DESC" />
+                                
+        <field 
+            name="msg_email_missing" 
+            type="text" 
+            default="" 
+            size="20" 
+            label="COM_CWCONTACT_EMAIL_MISSING_LABEL" 
+            description="COM_CWCONTACT_EMAIL_MISSING_DESC" />
+                
+        <field 
+            name="msg_email_invalid" 
+            type="text" 
+            default="" 
+            size="20" 
+            label="COM_CWCONTACT_EMAIL_INVALID_LABEL" 
+            description="COM_CWCONTACT_EMAIL_INVALID_DESC" />
+                                                
+        <field 
+            name="msg_message_missing" 
+            type="text" 
+            default="" 
+            size="20" 
+            label="COM_CWCONTACT_MESSAGE_MISSING_LABEL" 
+            description="COM_CWCONTACT_MESSAGE_MISSING_DESC" />
+                
+        <field 
+            name="msg_captcha_wrong" 
+            type="text" 
+            default="" 
+            size="20" 
+            label="COM_CWCONTACT_CAPTCHA_WRONG_LABEL" 
+            description="COM_CWCONTACT_CAPTCHA_WRONG_DESC" />          
+                
+        <field 
+            name="msg_email_sent" 
+            type="text" 
+            default="" 
+            size="20" 
+            label="COM_CWCONTACT_EMAIL_SENT_LABEL" 
+            description="COM_CWCONTACT_EMAIL_SENT_DESC" />
+
+    </fieldset>
+    
+                        
+    <fieldset 
+        name="LABELS"
+        label="COM_CWCONTACT_LABEL_OPTIONS_TAB" >
+                
+        <field 
+            name="labels_header"
+            type="header"
+            default="COM_CWCONTACT_LABELS_TITLE" 
+            label=""
+            description="" />
+                
+        <field
+            type="spacer" 
+            name="subject_spacer" 
+            label="COM_CWCONTACT_SPACER_SUBJECT"
+            class="cw_label" /> 
+                
+        <field 
+            name="subject_lbl" 
+            type="text" 
+            default="" 
+            label="COM_CWCONTACT_FIELD_SUBJECT_LABEL" 
+            description="COM_CWCONTACT_FIELD_SUBJECT_DESC" />
+                
+        <field 
+            name="subject_hint" 
+            type="text" 
+            default="" 
+            label="COM_CWCONTACT_FIELD_SUBJECT_HINT_LABEL" 
+            description="COM_CWCONTACT_FIELD_SUBJECT_HINT_DESC" />
+                
+        <field
+            type="spacer" 
+            name="name_spacer" 
+            label="COM_CWCONTACT_SPACER_NAME"
+            class="cw_label" /> 
+                              
+        <field 
+            name="name_lbl" 
+            type="text" 
+            default="" 
+            label="COM_CWCONTACT_FIELD_NAME_LABEL" 
+            description="COM_CWCONTACT_FIELD_NAME_DESC" />
+                      
+        <field 
+            name="name_hint" 
+            type="text" 
+            default="" 
+            label="COM_CWCONTACT_FIELD_NAME_HINT_LABEL" 
+            description="COM_CWCONTACT_FIELD_NAME_HINT_DESC" />
+        <field
+            type="spacer" 
+            name="email_spacer_lbl" 
+            label="COM_CWCONTACT_SPACER_EMAIL"
+            class="cw_label" /> 
+                
+        <field 
+            name="email_lbl" 
+            type="text" 
+            default="" 
+            label="COM_CWCONTACT_FIELD_EMAIL_LABEL" 
+            description="COM_CWCONTACT_FIELD_EMAIL_DESC" />
+                
+        <field 
+            name="email_hint" 
+            type="text" 
+            default="" 
+            label="COM_CWCONTACT_FIELD_EMAIL_HINT_LABEL" 
+            description="COM_CWCONTACT_FIELD_EMAIL_HINT_DESC" />
+                                      
+        <field
+            type="spacer" 
+            name="msg_spacer" 
+            label="COM_CWCONTACT_SPACER_MSG"
+            class="cw_label" /> 
+                
+        <field 
+            name="message_lbl" 
+            type="text" 
+            default="" 
+            label="COM_CWCONTACT_FIELD_MESSAGE_LABEL" 
+            description="COM_CWCONTACT_FIELD_MESSAGE_DESC" />
+                
+        <field 
+            name="message_hint" 
+            type="text" 
+            default="" 
+            label="COM_CWCONTACT_FIELD_MESSAGE_HINT_LABEL" 
+            description="COM_CWCONTACT_FIELD_MESSAGE_HINT_DESC" />
+
+        <field
+            type="spacer" 
+            name="copyme_spacer" 
+            label="COM_CWCONTACT_SPACER_COPYME"
+            class="cw_label" /> 
+                
+        <field 
+            name="copyme_lbl" 
+            type="text" 
+            default="" 
+            label="COM_CWCONTACT_FIELD_COPYME_LABEL" 
+            description="COM_CWCONTACT_FIELD_COPYME_DESC" />
+        
+        <field
+            type="spacer" 
+            name="captcha_spacer" 
+            label="COM_CWCONTACT_SPACER_CAPTCHA"
+            class="cw_label" /> 
+        
+        <field 
+            name="captcha_heading" 
+            type="text" 
+            default="" 
+            label="COM_CWCONTACT_CAPTCHA_HEADING_LABEL" 
+            description="COM_CWCONTACT_CAPTCHA_HEADING_DESC" />
+                
+        <field 
+            name="captcha_hint" 
+            type="text" 
+            default="" 
+            label="COM_CWCONTACT_FIELD_CAPTCHA_HINT_LABEL" 
+            description="COM_CWCONTACT_FIELD_CAPTCHA_HINT_DESC" />
+                
+        <field
+            type="spacer" 
+            name="sfrom_spacer" 
+            label="COM_CWCONTACT_SPACER_SFROM"
+            class="cw_label" /> 
+                
+        <field 
+            name="sfrom_web_lbl" 
+            type="text" 
+            default="" 
+            label="COM_CWCONTACT_FIELD_SFROMWEB_LABEL" 
+            description="COM_CWCONTACT_FIELD_SFROMWEB_DESC" />
+                
+    </fieldset>  
+    
+    <fieldset 
+        name="CAPTCHA"
+        label="COM_CWCONTACT_CAPTCHA_OPTIONS_TAB">
+
+        <field 
+            name="captcha_header"
+            type="header"
+            default="COM_CWCONTACT_CAPTCHA_TITLE" />
+        
+        <field 
+            name="which_captcha" 
+            type="list"  
+            default="none" 
+            label="COM_CWCONTACT_FIELD_WHICH_CAPTCHA_LABEL" 
+            description="COM_CWCONTACT_FIELD_WHICH_CAPTCHA_DESC" >
+            <option value="none">COM_CWCONTACT_FIELD_CAPTCHA_OPT1</option>
+            <option value="basic">COM_CWCONTACT_FIELD_CAPTCHA_OPT2</option>
+        </field>   
+        
+        <field 
+            name="display_captcha_title" 
+            type="radio" 
+            class="btn-group btn-group-yesno"  
+            default="1" 
+            label="COM_CWCONTACT_FIELD_DISPLAY_CAPTCHA_TITLE_LABEL" 
+            description="COM_CWCONTACT_FIELD_DISPLAY_CAPTCHA_TITLE_DESC" >
+            <option value="0">CW_HIDE</option>
+            <option value="1">CW_SHOW</option>
+        </field>
+        
+        <field
+            type="spacer" 
+            name="basic_captcha_spacer" 
+            label="COM_CWCONTACT_SPACER_BASICCAPTCHA"
+            class="cw_label" /> 
+                                   	
+                                                                    			
+        <field 
+            name="bcaptcha_question" 
+            type="text" 
+            default="" 
+            label="COM_CWCONTACT_FIELD_BCAPTCHA_QUESTION" 
+            description="COM_CWCONTACT_FIELD_BCAPTCHA_QUESTION_DESC" />
+                
+        <field 
+            name="bcaptcha_answer" 
+            type="text" 
+            default="" 
+            label="COM_CWCONTACT_FIELD_BCAPTCHA_ANSWER" 
+            description="COM_CWCONTACT_FIELD_BCAPTCHA_ANSWER_DESC" />                  
+        
+    </fieldset>                           	
+        
+    <fieldset
+        name="updates"
+        label="COM_CWCONTACT_UPDATES_TAB">
+        
+        <field 
+            name="updates_header" 
+            type="header" 
+            default="COM_CWCONTACT_FIELD_UPDATES_DESC" 
+            label=""
+            description=""/>
+        
+        <field 
+            name="minstability" 
+            type="list" 
+            default="stable" 
+            label="COM_CWCONTACT_FIELD_MINSTABILITY_LABEL" 
+            description="COM_CWCONTACT_FIELD_MINSTABILITY_DESC">
+            <option value="beta">COM_CWCONTACT_STABILITY_BETA</option>
+            <option value="rc">COM_CWCONTACT_STABILITY_RC</option>
+            <option value="stable">COM_CWCONTACT_STABILITY_STABLE</option>
+        </field>
+        
+        <field 
+            name="liveupdate" 
+            type="hidden" 
+            default=""
+            label="" />		
+                
+    </fieldset>
+    
+    <fieldset 
+        name="permissions"
+        label="JCONFIG_PERMISSIONS_LABEL">
+
+        <field 
+            name="rules" 
+            type="rules"
+            component="com_coalawebcontact"
+            class="inputbox"
+            filter="rules"
+            validate="rules"
+            label="JCONFIG_PERMISSIONS_LABEL"
+            section="component" />
+        
+    </fieldset>
+    
+</config>

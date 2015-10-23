@@ -1,0 +1,114 @@
+
+/**** Rating ***/
+.vote .ratingbox, .rating .ratingbox{
+	position:relative;
+	display:block;
+	height: 15px;
+	 width: 80px;
+	background:url("../images/color-stars.png") repeat-x scroll 0 bottom transparent;
+}
+.vote .ratingbox span, .rating .ratingbox span {
+	background:url(../images/color-stars.png) repeat-x;
+	display:block;
+	width:1%;
+	height: 15px;
+	position:absolute;
+}
+.stars-orange{background-position:0 0 !important;}
+
+.category-ratingbox .stars-blue {
+    background-position: 0 -81px !important;
+}
+/**** end rating ***/
+
+/*** review ***/
+/*.list-reviews .normal, .list-reviews span.date
+{
+	border:none medium!important;
+}
+.buttonBar-right {
+    float: right!important;
+    text-align: right;
+    width: auto;
+}
+
+.sort-by .orderlistcontainer div.activeOrder
+{
+border-radius:0px!important;
+width:auto;
+float:left;
+
+border:none;
+}
+.orderlistcontainer div.activeOrder
+ {
+  background:none!important;
+ }*/
+ 
+ /** set delete and refresh image **/
+/*.cart-summary .vmicon, .cart-summary .vmiconFE
+{
+	background:url(../images/fontawsome.png) no-repeat top left !important;
+}*/
+.cart-summary .vm2-add_quantity_cart {
+    border: 0 none;
+    cursor: pointer;
+    height: 27px;
+    width: 27px;
+}
+.cart-summary .vm2-remove_from_cart
+{
+	 background-position:5px -22px !important;
+    border: 0 none;
+    cursor: pointer;
+    display: inline-block;
+    height: 27px;
+    vertical-align: bottom;
+    width: 27px;
+}
+/**** Quanity image ****/
+.latest_prd span.quantity-controls input.quantity-plus{
+    background: url("../images/quantity_icon/color_11.png") repeat-x scroll 0 0 rgba(0, 0, 0, 0)!important;
+    margin-bottom: 2px;
+}
+.latest_prd span.quantity-controls input.quantity-minus {
+    background: url("../images/quantity_icon/color_11.png") repeat-x scroll 15px 0 rgba(0, 0, 0, 0)!important;
+}
+
+.fea_prd span.quantity-controls input.quantity-plus{
+    background: url("../images/quantity_icon/color_1.png") repeat-x scroll 0 0 rgba(0, 0, 0, 0)!important;
+    margin-bottom: 2px;
+}
+.fea_prd span.quantity-controls input.quantity-minus {
+    background: url("../images/quantity_icon/color_1.png") repeat-x scroll 15px 0 rgba(0, 0, 0, 0)!important;
+}
+input.quantity-input
+ {
+
+    height: 30px !important;
+    width: 30px !important;
+}
+span.addtocart-button {
+    margin: 3px 0 0 10px!important;
+	}
+.billto-shipto span, a.terms-of-service {
+    font-weight: normal!important;;
+}
+.vmpayment_name, .vmpayment_cost, .vmshipment_name, .vmshipment_cost {
+    font-weight: normal!important;
+ }
+span.details-button input.details-button, .vm-button-correct, .vm-button-correct:link, .vm-button-correct:visited, span.addtocart-button input.addtocart-button, span.addtocart-button input.notify-button
+ {
+ border-radius: 0px!important;
+ }
+ 
+ .checkout-button-top {
+    text-align: left!important;
+}
+.cart-view h2{font-size:22px!important;
+ }
+.vmpayment_name, .vmpayment_cost, .vmshipment_name, .vmshipment_cost{padding:0!important;}
+span.quantity-controls input.quantity-minus, span.quantity-controls input.quantity-plus
+ {
+ text-indent:100px;
+ }

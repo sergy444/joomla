@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5" client="site" method="upgrade">
+    <name>Featured Prodcut</name>
+    <author>www.mojoomla.com</author>
+    <version>1.0.0</version>
+    <description>Featured prodcut module display all the prodcut which are Featured</description>
+    <files>
+        <filename>mod_featured_product.xml</filename>
+        <filename module="mod_featured_product">mod_featured_product.php</filename>
+        <filename>index.html</filename>
+        <filename>helper.php</filename>
+        <filename>tmpl/default.php</filename>
+        <filename>tmpl/index.html</filename>
+		<folder>css</folder>
+		<folder>js</folder>
+		<folder>images</folder>
+    </files>
+    <config>
+		<fields name="params">
+			<fieldset name="Advanced">
+				<field
+					name="moduleclass_sfx"
+					type="text"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />					
+			</fieldset>
+			
+		</fields>
+    </config>
+</extension>

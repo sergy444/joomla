@@ -1,0 +1,258 @@
+/**
+ * @author              Steven Palmer
+ * @author url          http://coalaweb.com
+ * @author email        support@coalaweb.com
+ * @copyright           Copyright (c) 2013 Steven Palmer All rights reserved.
+*/
+
+/*------------------------------------------------------------------------------
+Layout
+------------------------------------------------------------------------------*/
+.cw-plg-contact-light100 {width: 100%;}
+.cw-plg-contact-light90 {width: 90%;}
+.cw-plg-contact-light80 {width: 80%;}
+.cw-plg-contact-light70 {width: 70%;}
+.cw-plg-contact-light60 {width: 60%;}
+.cw-plg-contact-light50 {width: 50%;}
+
+#cw-plg-contact-light { 
+    margin:0 0 5px 0;
+    padding:0px 5px;
+    line-height:1.2em;
+}
+
+#cw-plg-contact-light form { 
+    margin:0; 
+    padding:0;
+}
+
+/*------------------------------------------------------------------------------
+Messages 
+------------------------------------------------------------------------------*/
+#cw-plg-contact-light .error, 
+#cw-plg-contact-light .success  {
+    clear:both; 
+    display:block; 
+    padding: 5px 5px 5px 35px; 
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5); 
+    border-width:1px; 
+    border-style:solid; 
+    -webkit-border-radius: 4px; 
+    -moz-border-radius: 4px; 
+    border-radius: 4px;  
+    font-size:11px; 
+    margin:5px 0px;
+    line-height:20px;
+}
+
+#cw-plg-contact-light .error{
+    background: url("../icons/cw-alert.png") no-repeat scroll -2px center #FFF0EB;
+    border-color: #FFD7CD; 
+    color: #b94a48; 
+}
+
+#cw-plg-contact-light .success{
+    background: url("../icons/cw-info.png") no-repeat scroll -5px center #EBF5FA;
+    border-color: #D2DCE1;
+    color: #2382B2; 
+}
+
+/*------------------------------------------------------------------------------
+Fields
+------------------------------------------------------------------------------*/
+#cw-plg-contact-light input[type=text], 
+#cw-plg-contact-light input[type=email], 
+#cw-plg-contact-light textarea {
+    display:inline-block;
+    border: 1px solid #AAAAAA;
+    box-shadow: 0 0 3px #CCCCCC, 0 10px 15px #EEEEEE inset;
+    height:22px;
+    padding:4px 6px;
+    margin:5px 0;
+    font-size:12px;
+    line-height:22px;
+    -webkit-border-radius:3px;
+    -moz-border-radius:3px;
+    -moz-box-sizing: content-box;
+    border-radius:3px; 
+    font-family:Arial, Helvetica, sans-serif;
+    width:98%;
+}
+
+#cw-plg-contact-light label, 
+#cw-plg-contact-light .copyme label, 
+#cw-plg-contact-light .copyme input { 
+    display:inline-block;
+    margin:0;
+    font-weight:normal;
+}
+
+#cw-plg-contact-light .copyme input  { 
+    vertical-align: middle;
+    margin-left:5px;
+    width:auto;
+}
+
+#cw-plg-contact-light .copyme label {padding: 0px 5px;}
+#cw-plg-contact-light .copyme {margin-top:10px;}
+#cw-plg-contact-light textarea {height:auto;}
+
+#cw-plg-contact-light textarea:focus, 
+#cw-plg-contact-light input:focus,
+#cw-plg-contact-light select:focus {
+    border-color:rgba(82, 168, 236, 0.8);
+    outline:0;
+    outline:thin dotted \9;
+    -webkit-box-shadow:inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+    -moz-box-shadow:inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+    box-shadow:inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+    font-weight: normal !important;
+}
+
+#cw-plg-contact-light .invalid {
+    font-weight: normal !important;
+    color: rgb(157, 38, 29) !important;
+}
+
+#cw-plg-contact-light input:focus:invalid, 
+#cw-plg-contact-light textarea:focus:invalid,
+#cw-plg-contact-light select:focus:invalid{
+    border-color: #B03535 !important;
+    box-shadow: 0 0 5px #D45252 !important;
+    font-weight: normal !important;
+    color: rgb(157, 38, 29) !important;
+}
+
+/*------------------------------------------------------------------------------
+Buttons
+------------------------------------------------------------------------------*/
+.cw-plg-contact-light-buttons {
+    display:inline-block;
+    width:100%;
+}
+
+.cw-plg-contact-light-buttons .btn-submit{
+    margin-left:auto;
+    margin-right:auto;
+    float:right;
+    margin-top:5px;
+}
+
+#cw-plg-contact-light .button-green, 
+#cw-plg-contact-light .button-blue, 
+#cw-plg-contact-light .button-orange, 
+#cw-plg-contact-light .button-pink, 
+#cw-plg-contact-light .button-red, 
+#cw-plg-contact-light .button-teal {
+    background-color: #F5F5F5;
+    background-image: linear-gradient(#FFFFFF, #E6E6E6);
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    border-image: none;
+    border-radius: 4px 4px 4px 4px;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.05);
+    color: #333333;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 18px;
+    padding: 4px 10px;
+    text-align: center;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+    vertical-align: middle;
+    margin:5px 0px;
+}
+
+#cw-plg-contact-light .button-green:hover, #cw-plg-contact-light .button-blue:hover, #cw-plg-contact-light .button-orange:hover, 
+#cw-plg-contact-light .button-pink:hover, #cw-plg-contact-light .button-red:hover, #cw-plg-contact-light .button-teal:hover {
+    background-color: #E6E6E6;
+    background-position: 0 -15px;
+    background-repeat: repeat-x;
+    color: #333333;
+    cursor: pointer;
+    text-decoration: none;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+    transition: background-position 0.1s linear 0s;
+}
+
+#cw-plg-contact-light .button-green, #cw-plg-contact-light .button-blue, #cw-plg-contact-light .button-orange,
+#cw-plg-contact-light .button-pink, #cw-plg-contact-light .button-red, #cw-plg-contact-light .button-teal {
+    color: #FFFFFF;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+
+#cw-plg-contact-light .button-green:hover, #cw-plg-contact-light .button-blue:hover, #cw-plg-contact-light .button-orange:hover, 
+#cw-plg-contact-light .button-pink:hover, #cw-plg-contact-light .button-red:hover, #cw-plg-contact-light .button-teal:hover {
+    color: #FFFFFF;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+
+#cw-plg-contact-light .button-green {
+    background-color: #5BB75B;
+    background-image: linear-gradient(#62C462, #51A351);
+}
+
+#cw-plg-contact-light .button-green:hover {background-color: #51A351;}
+
+#cw-plg-contact-light .button-orange {
+    background-color: #FAA732;
+    background-image: linear-gradient(#FBB450, #F89406);
+}
+
+#cw-plg-contact-light .button-orange:hover {background-color: #F89406;}
+
+#cw-plg-contact-light .button-pink {
+    background-color: #D825C8;
+    background-image: linear-gradient(#F27BEA, #C843BF);
+}
+
+#cw-plg-contact-light .button-pink:hover {background-color: #C843BF;}
+
+#cw-plg-contact-light .button-red {
+    background-color: #DA4F49;
+    background-image: linear-gradient(#EE5F5B, #BD362F);
+}
+
+#cw-plg-contact-light .button-red:hover {background-color: #BD362F;}
+
+#cw-plg-contact-light .button-teal {
+    background-color: #21AEA5;
+    background-image: linear-gradient(#46CBC7, #1A9E9A);
+}
+
+#cw-plg-contact-light .button-teal:hover {background-color: #1A9E9A;}
+
+#cw-plg-contact-light .button-blue {
+    background-color: #49AFCD;
+    background-image: linear-gradient(#5BC0DE, #2F96B4);
+}
+
+#cw-plg-contact-light .button-blue:hover {background-color: #2F96B4;}
+
+/*------------------------------------------------------------------------------
+Character Count
+------------------------------------------------------------------------------*/
+#cw-plg-contact-light #charcount{ 
+    text-align: right;
+    line-height:0.8em;
+}
+#cw-plg-contact-light .char-counter{ 
+    background: #EBF5FA;
+    border-color: #D2DCE1;
+    color: #2382B2; 
+}
+
+#cw-plg-contact-light #charcount label { 
+    font-size: 90%;
+    font-style: italic;
+}
+
+/*------------------------------------------------------------------------------
+Captcha
+------------------------------------------------------------------------------*/
+#recaptcha_area input[type="text"] {
+    display: inline-block;
+    height: auto;
+}
+
+#recaptcha_area, #recaptcha_table { line-height: 0!important;}

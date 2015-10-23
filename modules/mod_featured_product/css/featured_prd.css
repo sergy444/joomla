@@ -1,0 +1,177 @@
+/*
+* @package Trego
+* @copyright (C) 2014 by mojoomla.com - All rights reserved!
+* @license GNU General Public License, version 2 (http://www.gnu.org/licenses/gpl-2.0.html)
+* @author mojoomla.com <sales@mojoomla.com>
+*/
+.block-featured .bx-wrapper {position: relative;margin: 0;padding: 0;width: 100%;height: auto;}
+.block-featured .bx-wrapper .bx-prev {right: 35px;left: auto;margin: 0;background: url(../images/pager_arrow.png) 10px 4px no-repeat;}
+.block-featured .bx-wrapper .bx-next {right: 0;left: auto;margin: 0;background: url(../images/pager_arrow.png) 10px -29px no-repeat;}
+.block-featured .bx-wrapper .bx-controls-direction a {position: absolute;top: -45px;outline: 0;width: 33px;height: 25px;text-indent: -9999px;z-index: 9;}
+.block-featured .bx-wrapper .bx-controls-direction a:hover {background-color: #222;}
+.block-featured .product-image-area a {display: block;}
+.block-featured .bx-wrapper img {max-width: 100%;margin-bottom:10px;}
+.block-featured .product-image-area a {color: #595959;/*font-family: 'PT Sans Caption', sans-serif;*/font-size: 13px;font-weight: normal;text-transform: uppercase;}
+.block-featured .bx-wrapper .bx-viewport {min-height: 332px;}
+.product-name {
+   /* float: left;
+    padding: 15px 0;
+    width: 100%;
+	 border-bottom: 1px solid #EEEEEE;*/
+}
+
+.price-box {
+   /* float: left;
+    margin: 10px 0;
+    text-align: left;
+    width: 100%;*/
+}
+.price-box span.PricesalesPrice {
+    font-size: 16px;
+    letter-spacing: 1px;
+	color:#fff;
+}
+.price-box div.PricetaxAmount
+{
+
+ clear: left;
+    color: #ffffff;
+    float: left;
+    font-size: 13px;
+    line-height: 12px;
+}
+.block-content .bx1
+{
+	 float: left;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+.fea_prd .block-content .product-name
+{
+background: none repeat scroll 0 0 #222;
+   
+   
+    margin: 0;
+    opacity: 0.9;
+    padding: 16px 0 16px 13px;
+	text-align:left;
+}
+.block-content .product-name > a {
+    font-size: 16px;
+	 color: #FFFFFF;
+    font-weight: normal;
+    line-height: normal;
+	font-weight: 600;
+	text-transform: capitalize;
+	font-family: 'Raleway', sans-serif;
+}
+.block-content .bx1:hover .product-name
+{
+ background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+    color: #FFFFFF;
+ 
+    
+    
+    margin: 0;
+    padding: 16px 0 50px 25px;
+	}
+.block-content .price-box
+	{
+	float: right;
+    margin: -8px 10px 0 0;
+    padding: 0;
+	}
+.block-content .other_info
+{
+background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border: medium none;
+    bottom: 0;
+    left: 0;
+    margin-bottom: 0;
+    position: absolute;
+    transition: bottom 0.5s cubic-bezier(0.19, 1, 0.22, 1) 0s;
+    width: 100%;
+    z-index: 100;
+	}
+.block-content .bx1:hover .other_info
+{
+	 bottom: 180px;
+	  color: #FFFFFF;
+}	
+.block-content .additionnal
+{
+color: #FFFFFF;
+    font-weight: 500;
+    left: 0;
+    line-height: 20px;
+    opacity: 0;
+    padding: 0 25px;
+    position: absolute;
+    right: 0;
+    top: 100%;
+	text-align:left;
+	font-size:13px;
+	font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.block-content .bx1:hover .additionnal
+{
+   opacity: 1;
+}
+
+.block-content .bx1 .hover
+{
+bottom: 0;
+    left: 0;
+    pointer-events: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 90;
+	opacity:0;
+}
+.fea_prd .block-content .bx1:hover  .hover 
+{
+background: none repeat scroll 0 0 #222;
+    height: 300px;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+	-moz-opacity: 0.8;
+	-khtml-opacity: 0.8;
+	opacity: 0.8;
+   
+}
+.product-image-area {
+    height: 300px;
+    width: 100%;
+	text-align:center;
+}
+.fea_prd .block-content .additionnal a input
+{
+   
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: normal;
+    margin: 0;
+    padding: 5px 10px;
+    text-transform: uppercase;
+	text-align:left;
+	border:none medium;
+    cursor:pointer;
+	height:37px;
+}
+
+.block-content .additionnal a input
+{
+color: #ffffff;
+}
+
+.moduletable.fea_prd h3 {
+    color: #FFFFFF;
+    font-size: 36px;
+    margin-bottom: 20px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
